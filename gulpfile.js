@@ -1,6 +1,17 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var pkg = require('./package.json');
+var sonarqubeScanner = require('sonarqube-scanner');
+
+gulp.task('sonar', function(callback) {
+  sonarqubeScanner({
+    serverUrl : "https://sonarcloud.io",
+    token : "a165ec629fb62e06cca87232110154399b899c0d",
+    options : {
+      "sonar.organization": "knechtionscoding-github"
+    }
+  }, callback);
+});
 
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {

@@ -6,6 +6,7 @@
   "scripts": {
     "test": "test",
     "gulp": "gulp",
+    "sonar": "gulp sonar",
     "lint": "eslint .",
     "dev": "gulp dev"
   },
@@ -35,6 +36,7 @@
     "eslint": "^5.4.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "sonarqube-scanner": "^2.1.0"
   }
 }
