@@ -1,0 +1,40 @@
+{
+  "name": "footballcoachingtrees",
+  "version": "1.0.0",
+  "description": "Visualization with Information about NFL and College Football Coaching Trees",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "gulp": "gulp",
+    "lint": "eslint .",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KnechtionsCoding/FootballCoachingTrees.git"
+  },
+  "keywords": [
+    "football",
+    "nfl",
+    "cfb",
+    "coaching"
+  ],
+  "author": "Hans Knecht <Hans.Knechtions@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/KnechtionsCoding/FootballCoachingTrees/issues"
+  },
+  "homepage": "https://github.com/KnechtionsCoding/FootballCoachingTrees#readme",
+  "dependencies": {
+    "bootstrap": "4.1.1",
+    "jquery": "3.3.1",
+    "jquery.easing": "^1.4.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "gulp": "^3.9.1"
+  }
+}
