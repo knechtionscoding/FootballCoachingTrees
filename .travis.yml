@@ -2,16 +2,16 @@ sudo: false
 language: node_js
 dist: trusty
 node_js:
-  - "node"
+- node
 install: npm install
 script:
-  - gulp
+- gulp
+- sonar-scanner
 cache:
   directories:
-    - node_modules
-
-#deploy:
-#  provider: s3
-#  access_key_id: "YOUR AWS ACCESS KEY"
-#  secret_access_key: "YOUR AWS SECRET KEY"
-#  bucket: "S3 Bucket"
+  - node_modules
+addons:
+  sonarcloud:
+    organization: KnechtionsCoding-Github
+    token:
+      secure: pOOmgDW+7rrWT0kTlfrH4OPQr3989Knr4ww/KBJ4yjw/FbNJJwjuKXskAbUIHUypcduub0Fl+75Fv5BrfjaWPTfuDZvb5RaYxbRirSC9OKeaAE3mb07JhvPsa/fnZku12tvUJbMLIfr5dHmd4SZL/m6vDUptqEkkYCNyhndBY6tal7cAjulouSTHRr55sw6szHZqVlSigMsexY4qa8+5xUTr+UOiXSX0lHPCfqloLah5ENHH9Y5O0t/tYTS7hVfsHIX+S3S31MX6XOp1DCI7M0+6CffYalVXir5/tjx9zGTcOb1HwHZx2VCepEr54HarrxaTK+6DH568Rw12HJxtP0AZx5r4JO2/lK5rgktNwZe3DQFZv1K6Q/Ikv2lEcaaCb/iRVd73Cu8eBLzEV7+mNBQ6zzKVvEXF3uk7cX6q9Gs0NXzsK8AATjj3TQK57E3vr3kwKsEzEkOfHZk5pavzXdJrb+u3xFuit63rbVlUD2B6pW/0CAR9eyjZZ4oUmAJwZe37bmexrAsfEBe9kLQUd7O5Gts2BG+IJJuWK46/FLd5XvlJS9xal9vpHEf91cCdbtH/fCllm1FvanDlae2iSzoDARa939PERlrbEFPfkJ4g6EscLAue1yrt3hOMUlQKx+5OHu5JjpiSDwL4YCd5X0558fNG0vF43Kth/mnqKqs=
