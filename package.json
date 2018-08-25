@@ -25,6 +25,14 @@
   "bugs": {
     "url": "https://github.com/KnechtionsCoding/FootballCoachingTrees/issues"
   },
+  "cicd-server": {
+    "type": "travis",
+    "url": "https://travis-ci.org/KnechtionsCoding/FootballCoachingTrees"
+  },
+  "static-analysis": {
+    "type": "sonar",
+    "url": "https://sonarcloud.io/dashboard?id=football-coaching-tree"
+  },
   "homepage": "https://github.com/KnechtionsCoding/FootballCoachingTrees#readme",
   "dependencies": {
     "bootstrap": "4.1.1",
